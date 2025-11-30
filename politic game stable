@@ -12,8 +12,8 @@ def lomka():
     btn_no.config(text='Завершить жизнь\nсуидцидом',command=end)
 def zelyalose():
     lable.config(text="Украина переходит в состав Рф\n Выберите следующего\nпрезидента",width=40,height= 20,font='Times 14')
-    btn_yes.config(text='Никита Zov Васильевич',height=30 ,width= 30,bg='green' )
-    btn_no.config(text='Эдуард Svoi Жданов',height=30, width= 30,bg='green')
+    btn_yes.config(text='Никита Zov Васильевич',height=30 ,width= 30,bg='green' ,command=zelyavict)
+    btn_no.config(text='Эдуард Svoi Жданов',height=30, width= 30,bg='green',command=zelyavict)
 
 def titles():
     subprocess.call('titles.mp4',shell=True)
@@ -46,7 +46,7 @@ def putin_bro():
 def end():
     root.destroy()
     daun = command=webbrowser.open("https://funny.klev.club/uploads/posts/2024-03/funny-klev-club-p-smeshnie-kartinki-pro-zelenskogo-i-prikoln-6.jpg")
-    time.sleep(4)
+    time.sleep(2)
     subprocess.call('titles.mp4',shell=True)
 
 def daun():
